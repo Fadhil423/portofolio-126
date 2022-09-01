@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            /* Google Fonts*/
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+            *{
+                font-family: 'Poppins', sans-serif;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                scroll-behavior: smooth;
+                scroll-padding-top: 2rem;
+            }
+
+            /* Variables */
+            :root{
+                --main-color:#647bff;
+                --body-color: #090a1a;
+                --container-color: #171b3c;
+                --heading-color: #222321;
+                --box-color: #0d0f26;
+                --bg-color: #fff;
+            }
+
+            body{
+                color: var(--bg-color);
+                background: var(--body-color);
+            }
+
+            img{
+                width: 100%;
+            }
+
+            section{
+                padding: 3rem 0 2rem;
+            }
+
+            a{
+                text-decoration: none;
+            }
+
+            li{
+                list-style: none;
+            }
+
+            .container {
+                max-width: 960px;
+                margin: auto;
+                width: 100%;
+            }
+
+            /* Header */
+            header{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                z-index: 100;
+            }
+            .nav{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 20px 0;
+            }
+            .logo {
+                font-size: 1.2rem;
+                font-weight: 600;
+                color: var(--main-color);
+            }
+            .navbar {
+                display: flex;
+                align-items: center;
+                column-gap: 1.5rem;
+            }
+            .nav-link{
+                font-size: 0.94rem;
+                padding: 4px 8px;
+                border-radius: 0.2rem;
+                color: var(--bg-color);
+            }
+            .nav-link:hover{
+                color: var(--main-color);
+                background: var(--container-color);
+                transition: 0.3s all linear;
+            }
+            /* Section Home */
+            .home{
+                min-height: 600px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-top: 7rem;
+            }
+
+            .home-content{
+                position: relative;
+                max-width: 600px;
+                width: 100%;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .home-img{
+                width: 180px;
+                height: 180px;
+                border-radius: 100%;
+                background: #98a7fc;
+                overflow: hidden;
+                margin-bottom: 2rem;
+            }
+            .home-img{
+                width: 180px;
+                height: 180px;
+                object-fit: cover;
+                object-position: cover;
+            }
+            .home-text{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }.home-text h3{
+                position: relative;
+                display: flex;
+                align-items: center;
+                column-gap: 0.5rem;
+                font-size: 1.1rem;
+                color: var(--main-color);
+            }
+            .social{
+                display: flex;
+                align-items: center;
+                column-gap: 0.5rem;
+            }
+            .social .bx{
+                font-size: 1.3rem;
+                padding: 10px;
+                border-radius: 50%;
+                color: var(--bg-color);
+                background: (var(--container-color));
+            }
+        </style>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portofolio Profile</title>
+        <!-- Link to CSS -->
+        <!--link rel="stylesheet" href="style.css"-->
+        <!-- Link to Boxicons -->
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <!-- Nav -->
+            <div class="nav container">
+                <!-- logo -->
+                <a href="#" class="logo">My Personal Information</a>
+                <!--Navbar-->
+                <ul class="navbar">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#portofolio" class="nav-link">Portofolio</a></li>
+                </ul>
+            </div>
+        </header>
+        <!-- Section Home -->
+        <section class="home container="home">
+            <div class="home-content">
+                <div class="home-img">
+                    <img src="https://storage.googleapis.com/dicoding-storage-12/profilepicture.webp" alt="">
+                </div>
+                <div class="home-text">
+                    <h2> <span class="color">John Doe</span></h2>
+                    <h3>Junior Web Developer</h3>
+                    <br><br>
+                    <h3>About Me</h3>
+                    <p>
+                        Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text since the 1500s, when an unknown
+                        printer took a galley of type and scrambled it to make a type speciment look. It is a long established fact that a reader will be distracted by the readable content
+                        of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here'.
+                    </p>
+                    <br><br>
+                    <h3>Personal Information</h3>
+                    <p>Age: 23 Years Old</p>
+                    <p>Phone: +62-8098-9999</p>
+                    <p>Email: john@dicoding.com</p>
+                    <br><br>
+                    <h3>Find me in!</h3>
+                    <div class="social">
+                        <a href="#"><i class='bx bxl-facebook-square' ></i></a>
+                        <a href="#"><i class='bx bxl-twitter' ></i></a>
+                        <a href="#"><i class='bx bxl-github'></i></a>
+                        <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </body>
+</html>
